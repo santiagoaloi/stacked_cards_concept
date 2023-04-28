@@ -33,7 +33,7 @@
 }
 
 .header-wrapper {
-  @apply flex items-center gap-1 border-b pb-3
+  @apply flex items-center gap-1 pb-3
 }
 
 .content-wrapper {

@@ -7,12 +7,12 @@
     </template>
 
     <div>
-      <VRow class="ma-auto">
+      <VRow v-if="cards.length" class="ma-auto">
         <VCol v-for="card in cards" :key="card.id" cols="4">
           <VCard class="pa-5" elevation="8" height="250" width="100%">
             <div class="d-flex flex-column fill-height">
               <div class="d-flex fill-height flex-column">
-                <VCardTitle> Task </VCardTitle>
+                <VCardTitle> Task {{ card.id }} </VCardTitle>
                 <VCardText>
                   {{ card.body }}
                 </VCardText>
@@ -31,6 +31,11 @@
 import { v4 as uuidv4 } from 'uuid'
 
 function addCard() {
+  const newCard = {
+    id: uuidv4(),
+    body: 'to make a type specimen book. It has survived not only five centto make a type  to make a type specimen book. It has survived not only five cent'
+  }
+
   cards.value.push(newCard)
 }
 
@@ -38,11 +43,6 @@ function removeCard(id) {
   cards.value = cards.value.filter((card) => {
     return card.id !== id
   })
-}
-
-const newCard = {
-  id: uuidv4(),
-  body: 'to make a type specimen book. It has survived not only five centto make a type  to make a type specimen book. It has survived not only five cent'
 }
 
 const cards = ref([

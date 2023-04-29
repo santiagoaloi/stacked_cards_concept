@@ -7,8 +7,6 @@
 ![Vercel](https://img.shields.io/static/v1?style=flat&message=Vercel&color=373e47&logo=Vercel&logoColor=FFFFFF&label=)
 
 
-![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-339999)
-#### The project is in the very early stages of development. The codebase will be changing frequently.
 
 <p align="center">
   <a href="#" target="_blank" rel="noopener noreferrer">
@@ -74,3 +72,6 @@ yarn lint
 yarn format
 
 ```
+
+![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-339999)
+#### The project is in the very early stages of development. The codebase will be changing frequently.
